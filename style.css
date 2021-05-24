@@ -1,0 +1,496 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: rgb(63, 60, 60)!important;
+    color: #333;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container-wrapper-top {
+    background:linear-gradient( rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)100%),url('https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    /*background: url('https://img.17qq.com/images/djfbgeiejdz.jpeg') ;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 8px solid #222;
+}
+.container-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-title {
+    position: relative;
+    margin: 10px 20px;
+}
+.logo-title img{
+    margin-left: 20px;
+    
+}
+.icon-button {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.icon-button select {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
+.icon-button select option{
+    width: inherit;
+    background-color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    
+}
+.dropdown-item{
+    padding-left: 50px;
+}
+.dropdown-menu{
+    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    margin-right: 20px;
+    padding:10px;
+}
+.dropdown-menu::before{
+    content:"\f0ac";
+    font-family: "FontAwesome";
+    color: white;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px){
+    .logo-title {
+        position: relative;
+        margin: 0;
+    }
+    .logo-title img{
+        margin-left: 10px;
+        
+    }
+  }
+
+/*------------------------------------------------------------------------------------------------*/
+
+.container-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+	
+}
+.card-detail {
+    max-width:600px;
+	margin:100px auto;
+	padding: 0 50px;
+}
+.title h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+.sub-title{
+    margin: 20px 0;
+}
+.sub-title h2 {
+    
+    color: white;
+    text-align: center;
+}
+.email-form{
+    max-width: 640px;
+}
+input[type=email] {
+    min-width: 450px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+}
+.form-box form div{
+    position: relative;
+}
+.form-box form div label{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    transition: 0.1s ease;
+    pointer-events: none;
+    color: #757575;
+}
+.form-box input:focus ~ label{
+    color: #757575;
+    top: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.email-form-content{
+    display: flex;
+}
+.email-form h3{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+.field{
+    display: flex;
+    justify-content: center;
+}
+::placeholder{
+    font-size: 1rem;
+}
+@media only screen and (max-width: 600px){
+    .title h1 {
+        
+        font-size: 30px;
+    }
+    .sub-title h2 {
+        font-size: 20px;
+    }
+    
+    .email-form h3{
+        width: 500px;
+        padding: 0 20px;
+    }
+    input[type=submit] {
+		width:100%;
+        padding: 20px;
+    }
+  }
+/*--------------------------------------------------------------------------------------*/
+
+.body-container{
+    background-color: rgb(0, 0, 0)!important;
+    position: relative;
+    
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+}
+.our-story-card-animation-card{
+	border-bottom: 8px solid #222;
+}
+.body-content{
+    
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+	
+}
+.our-story-card-animation-text{
+    
+    width: 52%;
+    height: 100%;
+    text-align: left;
+    flex: 0 1 auto;
+    padding: 2rem;
+    z-index: 3;
+}
+.our-story-card-animation-text h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+.our-story-card-animation-text h3{
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.our-story-card-animation-image{
+    position: relative;
+    width: 48%;
+    max-width: 1200px;
+}
+.our-story-card-animation-image img{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.our-story-card-animation-image video{
+    position: absolute;
+    width:75%;
+    height: 100%;
+    top: -2%;
+    left: 14%;
+}
+.our-story-card-animation-image .video3{
+    position: absolute;
+    width:60%;
+    height: 100%;
+    top: -15%;
+    left: 20%;
+}
+.our-story-card-animation {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  width:70%;
+  margin:0 auto;
+}
+.our-story-card-animation img {
+  max-width: 10vh;
+  max-height: 10vh;
+  height: auto;
+  border: 0;
+}
+.our-story-card-animation::after {
+  width: 3em;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  display: block;
+  background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif')
+    center center no-repeat;
+  background-size: 100%;
+  content: '';
+  -webkit-box-flex: 0;
+  float: right;
+}
+@media only screen and (max-width: 1000px){
+    .body-content{
+        display: flex;
+		flex-direction: column-reverse;
+        justify-content: center;
+        padding: 30px 20px;
+    }
+	.body-content1,.body-content3{
+		flex-direction: column;
+	}
+    .our-story-card-animation-text{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .our-story-card-animation-text h1{
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    .our-story-card-animation-text h3{
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+    .our-story-card-animation-image{
+        position: relative;
+        width: 70%;
+        max-width: 1200px;
+    }
+    .our-story-card-animation-image img{
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    .our-story-card-animation-image video{
+
+        width:80%;
+        height: 100%;
+        top: -4%;
+        left: 13%;
+    }
+    .our-story-card-animation-image .video3{
+        top: -19%;
+        left: 19.5%;
+    }
+}
+
+  /*------------------------list item-------------------------*/
+
+  .faq-card{
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+	border-bottom: 8px solid #222;
+}
+  .card-text{
+    margin: 50px;
+    display: block;
+    width: 70%;
+
+  }
+  .card-text h1{
+      
+      font-size: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+  }
+  .faq-card .card-text ul{
+    width: 100%;
+  }
+  .card-text ul li{
+    list-style: none;
+    margin: 10px;
+  }
+  .faq-question{
+    background-color: rgb(63, 60, 60);
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 24px; 
+    text-align: left; 
+         
+  }
+  .faq-question::after{
+    content:"\f067";
+    font-family: "FontAwesome";
+    color: white;
+    float: right;
+  }
+
+  .faq-answer{
+    margin-top: 2px;;
+    overflow: hidden;
+    display: none;
+    background-color: rgb(63, 60, 60);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 24px; 
+    line-height: 30px;
+  }
+  .faq-answer span{
+      width: 100%;
+  }
+  .fa{
+      float: right;
+  }
+  
+.active{
+      display: block;
+      width: 100%;
+  }
+.active::after{
+    content:"\f00d";
+    font-family: "FontAwesome";
+    color: white;
+    float: right;
+}
+  .list-container-card{
+      margin-top: 50px;
+  }
+  @media only screen and (max-width: 800px){
+	  .card-text h1{
+      font-size: 30px;
+  }
+  }
+  /*----------------------------------------------------*/
+  .site-footer-wrapper{
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+	border-bottom: 8px solid #222;
+  }
+  .site-footer{
+    margin: 50px 100px;
+    display: block;
+    width: 70%;
+    color: #757575;
+    font-size: 18px;
+
+  }
+  .site-footer a{
+    color: #757575;
+  }
+  .footer-links{
+        list-style: none;
+        margin: 0;
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+  }
+  .footer-link-item{
+      padding-bottom: 10px;
+  }
+  .footer-link-item a{
+    color: #757575;
+    font-size: 14px;
+  }
+  .footer-link-item a:hover{
+      text-decoration: underline;
+      color: #757575;
+  }
+  .list-button {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-button select {
+    margin: 0;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #757575;
+    border: 1px solid #757575;
+    padding:20px;
+}
+.list-button select option{
+    background-color: black;
+}
+.site-footer p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.site-footer p>a:hover{
+    text-decoration: underline;
+      color: #757575;
+}
+@media only screen and (max-width: 600px){
+    .footer-links{
+        list-style: none;
+        margin: 0;
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 500px){
+    .footer-links{
+        grid-template-columns: auto auto;
+  }
+}
